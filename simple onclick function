@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #nano {
+        width: 200px;
+        height: 100px;
+        border: 2px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="nano"></div>
+    <input type="button" id="buto" value="Hit me" />
+    <input type="button" id="buto2" value="forward" />
+
+    <script>
+      const conto = document.getElementById("nano");
+      const button1 = document.getElementById("buto");
+      const button2 = document.getElementById("buto2");
+
+      button1.addEventListener("click", () => {
+        conto.innerHTML = `<p>hello</p>`;
+      });
+
+      button2.addEventListener("click", () => {
+        conto.innerHTML = `<p>hello</p>
+        <label> Name:-<label>
+          <input type="text" value=""/>
+        
+        
+        `;
+      });
+    </script>
+  </body>
+</html>  
